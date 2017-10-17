@@ -1,0 +1,6 @@
+framework module SWSocketManager {
+  umbrella header "SWSocketManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
