@@ -7,7 +7,7 @@
 //
 
 #import "SWViewController.h"
-
+#import "SWSocketManager.h"
 @interface SWViewController ()
 
 @end
@@ -18,6 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [[SWSocketManager share] connect];
+    [[SWSocketManager share] sendMsg:@"Hello"];
+    [[SWSocketManager share] disConnect];
 }
 
 - (void)didReceiveMemoryWarning

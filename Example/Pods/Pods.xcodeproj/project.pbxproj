@@ -23,10 +23,10 @@
 		506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C18C0EB1FED5EB5CE3B0E768AC510F /* FBSnapshotTestCase-dummy.m */; };
 		53DF0BF9A2D6A0E5488C0EAC2EE5B177 /* SWSocketManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E40423E0B8DE7CA45D29130D6F8AA2E /* SWSocketManager-dummy.m */; };
 		69DA8B003216466C60F029CBD79897F1 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */; };
-		6DC359379A0D4AD09F6740C9BC7B7799 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 10562EBB18EDF4A6F6FC03A287A08022 /* ReplaceMe.m */; };
 		756564ABAF2892FE7140C92A1CDDCF65 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */; };
 		7E9B14D5F8842A86CA86F2AF45230725 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8F339250A1C3C5C5C5364254007103 /* XCTest.framework */; };
-		7F1D7BE91F961AB00043947F /* SWSocketManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1D7BE51F961A860043947F /* SWSocketManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F1D7C941F9704C20043947F /* SWSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D7C921F9704C10043947F /* SWSocketManager.m */; };
+		7F1D7C951F9704CC0043947F /* SWSocketManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1D7C931F9704C20043947F /* SWSocketManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		841FF232C33C7D49C58CEFDBE7EEB92B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA323C90663942983643D7A4D1F697C8 /* UIKit.framework */; };
 		91D0138ACFAD733E4061F12E450C336C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E88A450A84E3957158B3B3459740AA /* Foundation.framework */; };
 		9673CF780F48C8E4EC2A331717B1F67C /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,7 +64,6 @@
 		0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		0E3161C493DA9A2DD8646CDA35B6817F /* Pods-SWSocketManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SWSocketManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0E91A5043BD62B5EA1339ECB77AB927A /* Pods-SWSocketManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SWSocketManager_Tests-dummy.m"; sourceTree = "<group>"; };
-		10562EBB18EDF4A6F6FC03A287A08022 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = SWSocketManager/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		187437BEED1F7A1CA8ABBBEB3329DC19 /* SWSocketManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWSocketManager-prefix.pch"; sourceTree = "<group>"; };
 		18E1E984C32F10150BA87D9A3CA2A1FE /* Pods-SWSocketManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SWSocketManager_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -92,8 +91,8 @@
 		75718FCD74D3F956673B9913FFF86ECC /* Pods_SWSocketManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWSocketManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E7447C9A524B9ED89AA0101EF237C2 /* SWSocketManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWSocketManager-umbrella.h"; sourceTree = "<group>"; };
 		7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		7F1D7BE41F961A860043947F /* SWSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWSocketManager.m; sourceTree = "<group>"; };
-		7F1D7BE51F961A860043947F /* SWSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWSocketManager.h; sourceTree = "<group>"; };
+		7F1D7C921F9704C10043947F /* SWSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SWSocketManager.m; path = SWSocketManager/Classes/SWSocketManager.m; sourceTree = "<group>"; };
+		7F1D7C931F9704C20043947F /* SWSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SWSocketManager.h; path = SWSocketManager/Classes/SWSocketManager.h; sourceTree = "<group>"; };
 		823558E8AC8EB39D028DB5FBBEA227A3 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		84824FD8F85ADAD6C568BC6294810A77 /* Pods-SWSocketManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SWSocketManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
@@ -212,7 +211,8 @@
 		59F1FEC4B0C1E209D7A656399CDB808D /* SWSocketManager */ = {
 			isa = PBXGroup;
 			children = (
-				10562EBB18EDF4A6F6FC03A287A08022 /* ReplaceMe.m */,
+				7F1D7C931F9704C20043947F /* SWSocketManager.h */,
+				7F1D7C921F9704C10043947F /* SWSocketManager.m */,
 				A80FE131C097407974CF88E3CADB9CD2 /* Support Files */,
 			);
 			name = SWSocketManager;
@@ -256,23 +256,6 @@
 				EFE6FF6ACAF8800B2B802D95C6F6BDD1 /* Products */,
 				7935D1408093F1D7560469A3E4A728FB /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		7F1D7BE21F961A860043947F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				7F1D7BE31F961A860043947F /* Core */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		7F1D7BE31F961A860043947F /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				7F1D7BE41F961A860043947F /* SWSocketManager.m */,
-				7F1D7BE51F961A860043947F /* SWSocketManager.h */,
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		829BDB7A668DA652DDC70E19B525C2A5 /* Development Pods */ = {
@@ -351,7 +334,6 @@
 		FBD2D672921284E66F309CA3462F84D6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7F1D7BE21F961A860043947F /* Classes */,
 				2287B5EBEAA3C332F8DB9A1E61F5B097 /* FBSnapshotTestCase */,
 			);
 			name = Pods;
@@ -388,7 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA31DB04098CF83EEAEC78903708A64 /* SWSocketManager-umbrella.h in Headers */,
-				7F1D7BE91F961AB00043947F /* SWSocketManager.h in Headers */,
+				7F1D7C951F9704CC0043947F /* SWSocketManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,8 +497,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DC359379A0D4AD09F6740C9BC7B7799 /* ReplaceMe.m in Sources */,
 				53DF0BF9A2D6A0E5488C0EAC2EE5B177 /* SWSocketManager-dummy.m in Sources */,
+				7F1D7C941F9704C20043947F /* SWSocketManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
