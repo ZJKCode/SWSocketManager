@@ -9,18 +9,24 @@
 #import "SWViewController.h"
 #import "SWSocketManager.h"
 @interface SWViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end
 
 @implementation SWViewController
+- (IBAction)connect:(id)sender {
+    [[SWSocketManager share] connect];
+}
+- (IBAction)disconnect:(id)sender {
+    [[SWSocketManager share]disConnect];
+}
+- (IBAction)sendMsg:(id)sender {
+    [[SWSocketManager share] sendMsg:_textField.text];
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    [[SWSocketManager share] connect];
-    [[SWSocketManager share] sendMsg:@"Hello"];
-    [[SWSocketManager share] disConnect];
 }
 
 - (void)didReceiveMemoryWarning
